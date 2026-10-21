@@ -1,47 +1,48 @@
-# YOLOv8 Webcam Object Detection
+# Introduction to Computer Vision Seminar
 
-## Repository Name: yolov8-webcam-object-detection
+This repository contains educational materials for an introductory seminar on **Computer Vision**, presented at Gharjistan University in Kabul, Afghanistan.
 
-## Description
+The seminar introduces fundamental concepts and practical applications of computer vision, with a focus on helping learners understand how computers process and interpret visual information.
 
-This repository contains a Python script for real-time object detection using YOLOv8 with a webcam. The script captures live video from the webcam or Intel RealSense Computer Vision, detects objects in the video stream using the YOLOv8 model, and overlays bounding boxes and labels on the detected objects in real-time. Additionally, it provides functionality to save snapshots with detected objects.
+## Contents
 
-The script is designed to be easy to use and customizable, making it suitable for beginners and those interested in experimenting with object detection using YOLOv8.
+- **Presentation materials:** Slides and supporting resources used during the seminar.
+- **Introduction to Computer Vision:** An overview of the field, its fundamental concepts, and applications.
+- **YOLOv8 demonstration:** A practical object detection project presented as part of the seminar, including Python code for demonstrating computer vision concepts.
+- **Source code:** Supporting Python scripts associated with the practical demonstration.
 
-## Prerequisites
+## YOLOv8 Demonstration
 
-Before running the script, ensure you have the following dependencies installed:
+The repository includes a YOLOv8-based object detection demonstration to illustrate how deep learning models can identify and locate objects in images or video streams.
 
-- Python 3
-- OpenCV (`pip install opencv-python`)
-- Ultralytics (`pip install ultralytics`)
-- Pre-trained YOLOv8 model (provide your model path in the script)
-- PyRealSense2 (`pip install pyrealsense2`) (optional, for working with RealSense cameras)
-- [PyRealSense2](https://github.com/IntelRealSense/librealsense) (optional, for working with RealSense cameras)
+The demonstration serves as a practical component of the seminar rather than the sole focus of the repository.
 
-## Usage
+For information about YOLOv8, visit the [Ultralytics documentation](https://docs.ultralytics.com/).
 
-1. Clone the repository or download the script `app.py`.
-2. Install the required dependencies.
-3. Make sure you have a pre-trained YOLOv8 model (`.pt` file) and provide its path in the script.
-4. Run the script using the following command:
-python yolov8.py
+## Repository Structure
 
-5. The webcam will activate, and you'll see live video with object detection overlays.
-6. Press 's' to save a snapshot with detected objects.
-7. Press 'ESC' to exit the program.
+```text
+Computer_Vision_Seminar/
+├── Introduction to Vision.pdf
+├── README.md
+├── app.py
+└── index.py
+```
 
-## Customization
+*Note: The files listed above reflect the currently published repository. Additional presentation files or resources may be maintained locally.*
 
-- You can adjust the confidence threshold, NMS threshold, and input resolution in the `load_model()` function.
-- Modify the `save_image()` function to customize the save directory or filename format.
+## Purpose
 
-## Additional Resources
+The purpose of this repository is to preserve and share the educational materials associated with the seminar, including introductory content and a practical computer vision demonstration.
 
-- For training YOLOv8 on a custom dataset, you can use the [Roboflow platform](https://roboflow.com/).
-- To learn how to train YOLOv8 on a custom dataset using a Google Colab notebook, refer to [this Colab notebook](https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/train-yolov8-object-detection-on-custom-dataset.ipynb#scrollTo=D2YkphuiaE7_).
-- Models: https://docs.ultralytics.com/tasks/detect/#models
-## Acknowledgments
+## Technologies
 
-- This script is based on Ultralytics' YOLOv5 repository.
-- Special thanks to the Ultralytics team for their excellent work on YOLOv8 and other object detection models.
+- Python
+- Computer Vision
+- YOLOv8
+- OpenCV (where applicable to the demonstration)
+
+## Disclaimer
+
+This repository is intended for educational purposes. The YOLOv8 implementation is included as part of the seminar materials and is not intended to represent a standalone production-ready application.
+
